@@ -45,7 +45,7 @@ initial begin
     #2;
 
 
-    if (tb.t.mem.memory[16/4] !== expected_result) begin
+    if (tb.t.mem.memory[16/4] !== expected_result ) begin
         $display("=== ERRO: Esperado %h na memória, obtido %h", expected_result, tb.t.mem.memory[16/4]);
     end else begin
         $display("=== OK: Obtido %h na memória", tb.t.mem.memory[16/4]);
